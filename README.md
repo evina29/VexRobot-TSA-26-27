@@ -70,6 +70,11 @@ All the robot code lives in [`src/main.cpp`](src/main.cpp):
 * `opcontrol()` is the main driving loop that reads the controller 50 times per
   second and moves the wheels, arm, and claw
 
+## Devlog
+
+The full build journal, from the first parts to the finished code, is in
+[JOURNAL.md](JOURNAL.md).
+
 ## License
 
 This project is open source under the MIT License. See [LICENSE](LICENSE).
