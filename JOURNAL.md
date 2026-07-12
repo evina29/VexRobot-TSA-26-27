@@ -1,42 +1,63 @@
-# Collector Bot Devlog
+# Collector Bot Engineering Journal
 
-This is the build journal for Collector Bot, my VEX V5 collector robot for
-Stardance Hack Club and the 2026 to 2027 TSA year.
+**Project:** VEX V5 Collector Bot
+**Developer:** Evina Shingvi
+**Timeline:** April 2026 to July 12, 2026
 
 A note on how this journal is written: I started building the robot in April
 2026, before I decided to apply to Stardance, and I did not keep notes while I
 was building. So the first part of this journal is a retrospective, written on
-July 12, 2026, looking back at the three months of building. From July 12
-onward, entries are written as things happen.
+July 12, 2026, looking back at three months of building. From July 12 onward,
+entries are written as things happen, and the software work is documented by
+the commit history of this repository.
 
 ---
 
 ## The build, April to early July 2026 (retrospective)
 
-I started this project in April 2026 because I wanted a robot for the 2026 to
-2027 TSA year that could actually collect and carry objects, not just drive
-around. I built it from VEX metal parts and V5 electronics.
+### Planning
 
-The robot as it stands today, and roughly in the order it came together:
+I started by researching different drivetrain and claw mechanisms used in VEX
+robots and sketching several concepts. Some of my early sketches turned out to
+be too large for the parts I actually had, and I was unsure how to gear the arm
+so it could lift objects without stalling. I ended up revising the dimensions
+to fit a compact frame and settled on a simple collector design: a drivetrain,
+a lifting arm, and a claw.
 
-**The drive base.** A metal C-channel chassis with omni wheels and one smart
-motor per side. Omni wheels have small rollers around the rim, which lets the
-robot turn smoothly without the wheels fighting each other.
+### The drivetrain
 
-**The arm.** Two long metal beams driven by a motor through red high strength
-gears. The gears at the top of the beams are what the photo in this repo shows
-best. Getting an arm to lift and hold weight is a gearing problem more than a
-motor problem, which I did not appreciate when I started.
+The chassis came together from VEX metal C-channels with omni wheels and one
+smart motor per side. My first version had the wheels misaligned, and the robot
+veered to one side when pushed. I ended up rebuilding one side of the
+drivetrain, measuring the spacing between the wheels, and tightening screws
+that had worked themselves loose.
 
-**The claw.** A motor at the end of the arm that opens and closes to grab and
-release objects. This is what turns the robot from a drive base into an actual
-collector.
+### The arm
 
-Three months sounds like a long time for this, and most of that time went into
-rebuilding: getting gears to mesh properly, getting the arm geometry to a point
-where it could lift without tipping the robot, and rearranging motors and
-wiring as the design changed. I do not have week by week notes from this
-period, which is exactly why the rest of this journal exists.
+The first version of the arm was too heavy and struggled to lift, and the gears
+would skip under load. I lightened it by removing unnecessary pieces,
+repositioned the gears so they meshed properly, and reinforced the structure.
+This was the part of the build that taught me that lifting is a gearing problem
+more than a motor problem. Later, when driving with the arm raised, the frame
+flexed slightly during turns, so I added more structural supports.
+
+### The claw
+
+The first claw could not grip objects securely and its two sides were uneven.
+I rebuilt it using longer metal pieces and adjusted the spacing, then tested it
+against objects of different sizes. Larger objects still slipped at first, so
+I tightened the mechanism until the grip was reliable.
+
+### Wiring and reliability
+
+Wires occasionally snagged on moving parts, and one motor disconnected in the
+middle of a test. I rerouted the wiring away from anything that moves, added
+cable ties, labeled the motor ports, and got into the habit of checking every
+connection before each run.
+
+By early July the robot itself was solid: it could be pushed around, the arm
+held together under load, and the claw gripped. What it did not have yet was
+a program.
 
 ## July 12, 2026: The complete program, and a real repository
 
@@ -47,6 +68,8 @@ Big day for the software side. The robot now has a full working program:
   autonomous routine that drives forward.
 * Learned about motor brake modes. The arm and claw now use HOLD mode, so the
   arm stays up and the claw keeps its grip when I let go of the buttons.
+* Reversed the right drive motor in code so both sides push the robot forward
+  together.
 * Added a joystick deadband so the robot does not creep when the sticks are
   not perfectly centered.
 * Hit a real build problem: the newest PROS kernel (4.2.2) asked the compiler
@@ -59,5 +82,21 @@ Big day for the software side. The robot now has a full working program:
   My first upload was missing src, include, and firmware, meaning the repo had
   no actual code in it. Fixed by pushing the full project with git instead.
 
-Next up: test the program on the actual robot, tune the arm and claw speeds,
-and start practicing driving for TSA.
+### Current status (July 12, 2026)
+
+The Collector Bot can:
+
+* Drive using tank controls.
+* Lift and lower an arm.
+* Open and close a claw to collect objects.
+* Hold arm and claw position using brake mode.
+* Execute a basic autonomous routine.
+* Build and upload successfully using PROS.
+
+### Next steps
+
+* Test the program on the actual robot and tune the arm and claw speeds.
+* Improve the autonomous routine.
+* Add sensors for more accurate movement.
+* Increase claw grip strength.
+* Practice driving for TSA competitions during the 2026 to 2027 season.
