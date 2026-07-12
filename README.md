@@ -1,0 +1,75 @@
+# Collector Bot
+
+A VEX V5 robot that drives around, lifts its arm, and collects objects with its
+claw. Built from VEX metal parts, four motors, and a V5 brain, and programmed in
+C++ with [PROS](https://pros.cs.purdue.edu/).
+
+## About this project
+
+Collector Bot is an individual project by Evina Shingvi, in development since
+April 2026. It was made for Stardance Hack Club, and she hopes to use it in the
+2026 to 2027 TSA (Technology Student Association) year.
+
+## What it does
+
+Collector Bot is a driver controlled robot. You drive it with the V5 controller,
+lower the arm over an object, close the claw to grab it, lift it up, and carry it
+wherever you want. It also has a small autonomous routine that drives forward on
+its own for one second, which is used during the autonomous part of a match.
+
+## The robot
+
+* **Drivetrain:** two drive motors (one per side) with tank style controls
+* **Arm:** a motor powered lift made of two long metal beams with gears
+* **Claw:** a motor that opens and closes to grab and release objects
+* **Brain:** VEX V5 brain running the PROS kernel
+
+The arm and claw motors use HOLD brake mode, so when you let go of the buttons
+the arm stays up and the claw keeps its grip instead of dropping the object.
+
+## Controls
+
+| Control | What it does |
+|---|---|
+| Left joystick (up/down) | Left wheels forward/backward |
+| Right joystick (up/down) | Right wheels forward/backward |
+| R1 | Lift the arm up |
+| R2 | Lower the arm down |
+| L1 | Close the claw (grab) |
+| L2 | Open the claw (let go) |
+
+## Motor ports
+
+| Port | Motor |
+|---|---|
+| 1 | Left drive |
+| 2 | Right drive (reversed) |
+| 3 | Arm |
+| 4 | Claw |
+
+## How to run it from a laptop
+
+1. Install [VS Code](https://code.visualstudio.com/) and the
+   [PROS extension](https://marketplace.visualstudio.com/items?itemName=sigbots.pros)
+   from the VS Code marketplace.
+2. Download this repository (green **Code** button, then **Download ZIP**, then
+   unzip it) and open the folder in VS Code.
+3. Click the PROS icon in the left sidebar and choose **Build**. It should finish
+   with no errors.
+4. Plug the V5 brain into the laptop with a USB cable and turn the brain on.
+5. Choose **Upload** in the PROS sidebar to send the program to the brain.
+6. On the brain's touchscreen, open **Programs** and run the program.
+7. Turn on the V5 controller (make sure it is paired with the brain) and drive.
+
+## Code
+
+All the robot code lives in [`src/main.cpp`](src/main.cpp):
+
+* `initialize()` runs once at startup and sets up the screen and brake modes
+* `autonomous()` drives forward for one second on its own
+* `opcontrol()` is the main driving loop that reads the controller 50 times per
+  second and moves the wheels, arm, and claw
+
+## License
+
+This project is open source under the MIT License. See [LICENSE](LICENSE).
