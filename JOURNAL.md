@@ -11,6 +11,10 @@ July 12, 2026, looking back at three months of building. From July 12 onward,
 entries are written as things happen, and the software work is documented by
 the commit history of this repository.
 
+I did not keep exact time logs either, but I worked on the robot for roughly
+five hours a week from early April through mid July, which comes out to about
+70 hours in total.
+
 ---
 
 ## The build, April to early July 2026 (retrospective)
