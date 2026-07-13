@@ -25,6 +25,12 @@ instructions. Mine ended up pretty different, with taller towers, a longer
 two beam arm driven by a gear train, and omni wheels on a bigger chassis.
 I sketched out a few ideas and settled on that direction.
 
+Some of the robots I looked at in person while I was deciding what to build:
+
+<img width="307" height="399" alt="a robot I looked at for inspiration" src="https://github.com/user-attachments/assets/972cb72f-1691-4b63-b9c7-ae3cab8441d0" />
+<img width="496" height="403" alt="a tread robot I looked at for inspiration" src="https://github.com/user-attachments/assets/2fbce6d8-c6b1-42cd-ac7b-221859901601" />
+<img width="471" height="404" alt="top view of the tread robot" src="https://github.com/user-attachments/assets/54cf41aa-821c-402b-a89c-c34f619c04fb" />
+
 I also dumped out all my VEX parts and sorted the hardware into groups so I
 knew what I actually had and what I might need to get later.
 
@@ -63,6 +69,10 @@ across the floor by hand, one side rolled worse than the other.
 
 By the end of the week the drivetrain frame was done.
 
+The first version of the drive base:
+
+<img width="389" height="398" alt="first version of the drive base" src="https://github.com/user-attachments/assets/ee93d5da-97c8-49db-825e-0584d6f92764" />
+
 ## Week 3: April 13 to 19, 2026
 
 This week was the first arm prototype. I built a simple lifting mechanism out
@@ -70,6 +80,10 @@ of metal beams, gears, and shafts.
 
 It technically worked, but it had problems right away. It was heavier than I
 expected and it was really straining the motor.
+
+The first arm prototype, with the big gears mounted on the beams:
+
+<img width="307" height="374" alt="first arm prototype with gears" src="https://github.com/user-attachments/assets/49e943c1-c62b-4cf4-baed-2cea39dea6f9" />
 
 ### Challenges
 
@@ -156,12 +170,20 @@ I also added rubber bands to help it grip and hold on to stuff.
 * Adjusted the claw geometry.
 * Kept testing with different kinds of objects.
 
+The rebuilt claw on the end of the arm:
+
+<img width="407" height="400" alt="the rebuilt claw" src="https://github.com/user-attachments/assets/8613b248-8f4f-485f-9b2b-dcdc06b60916" />
+
 Way better than the first claw.
 
 ## Week 8: May 18 to 24, 2026
 
 This week I put the arm and claw together into one system. First time all the
 main mechanisms of the robot were actually connected.
+
+The gear train that drives the arm, coming together on the towers:
+
+<img width="335" height="403" alt="arm gear train on the towers" src="https://github.com/user-attachments/assets/ced9a6d8-08b9-455c-9aa8-7ba2d0c08065" />
 
 ### Challenges
 
@@ -213,6 +235,10 @@ temporary pieces.
 
 The arm felt way more stable after this.
 
+Mid rebuild on my work table:
+
+<img width="185" height="260" alt="mid rebuild on the work table" src="https://github.com/user-attachments/assets/dc7a7034-d55a-4cc4-b715-0b12f773c5cc" />
+
 ## Week 11: June 8 to 14, 2026
 
 Lots of mechanical testing this week.
@@ -255,6 +281,10 @@ interfering.
 Finished up the assembly work and got the robot ready for programming.
 
 At this point it could drive, lift, and grip reliably, at least mechanically.
+
+Almost fully assembled:
+
+<img width="316" height="388" alt="robot almost fully assembled" src="https://github.com/user-attachments/assets/af0bb3f8-617f-4216-a507-b2b6592137cd" />
 
 ### Challenges
 
@@ -363,15 +393,6 @@ what I originally wanted it to do.
 
 <img width="298" height="324" alt="image" src="https://github.com/user-attachments/assets/92a60f62-ffbd-41df-a45f-46d0adcee5bf" />
 
-<img width="407" height="400" alt="image" src="https://github.com/user-attachments/assets/8613b248-8f4f-485f-9b2b-dcdc06b60916" />
-<img width="335" height="403" alt="image" src="https://github.com/user-attachments/assets/ced9a6d8-08b9-455c-9aa8-7ba2d0c08065" />
-<img width="471" height="404" alt="image" src="https://github.com/user-attachments/assets/54cf41aa-821c-402b-a89c-c34f619c04fb" />
-<img width="496" height="403" alt="image" src="https://github.com/user-attachments/assets/2fbce6d8-c6b1-42cd-ac7b-221859901601" />
-<img width="307" height="399" alt="image" src="https://github.com/user-attachments/assets/972cb72f-1691-4b63-b9c7-ae3cab8441d0" /> (inspo)
-<img width="389" height="398" alt="image" src="https://github.com/user-attachments/assets/ee93d5da-97c8-49db-825e-0584d6f92764" />
-<img width="307" height="374" alt="image" src="https://github.com/user-attachments/assets/49e943c1-c62b-4cf4-baed-2cea39dea6f9" />
-<img width="316" height="388" alt="image" src="https://github.com/user-attachments/assets/af0bb3f8-617f-4216-a507-b2b6592137cd" />
-<img width="185" height="260" alt="image" src="https://github.com/user-attachments/assets/dc7a7034-d55a-4cc4-b715-0b12f773c5cc" />
 
 
 
