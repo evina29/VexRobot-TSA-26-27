@@ -75,6 +75,14 @@ All the robot code lives in [`src/main.cpp`](src/main.cpp):
 The full build journal, from the first parts to the finished code, is in
 [JOURNAL.md](JOURNAL.md).
 
+## Pictures of Bot
+<img width="299" height="326" alt="image" src="https://github.com/user-attachments/assets/31b9b403-030b-4fb2-b8b1-5e0454922980" />
+<img width="242" height="290" alt="image" src="https://github.com/user-attachments/assets/3aa775e8-208e-4875-9c25-ae8b87cd3874" />
+
+
+
 ## License
 
 This project is open source under the MIT License. See [LICENSE](LICENSE).
+
+
