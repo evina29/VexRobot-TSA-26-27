@@ -25,11 +25,9 @@ instructions. Mine ended up pretty different, with taller towers, a longer
 two beam arm driven by a gear train, and omni wheels on a bigger chassis.
 I sketched out a few ideas and settled on that direction.
 
-Some of the robots I looked at in person while I was deciding what to build:
+One of the robots I looked at in person while I was deciding what to build:
 
 <img width="307" height="399" alt="a robot I looked at for inspiration" src="https://github.com/user-attachments/assets/972cb72f-1691-4b63-b9c7-ae3cab8441d0" />
-<img width="496" height="403" alt="a tread robot I looked at for inspiration" src="https://github.com/user-attachments/assets/2fbce6d8-c6b1-42cd-ac7b-221859901601" />
-<img width="471" height="404" alt="top view of the tread robot" src="https://github.com/user-attachments/assets/54cf41aa-821c-402b-a89c-c34f619c04fb" />
 
 I also dumped out all my VEX parts and sorted the hardware into groups so I
 knew what I actually had and what I might need to get later.
@@ -258,6 +256,13 @@ little under load.
 * Started inspecting things before each test.
 
 It got a lot more reliable after that.
+
+An earlier full version of the robot that I put together and tested. Parts of
+this version changed later, like the claw and the wheels, but it let me test
+everything working together:
+
+<img width="496" height="403" alt="an earlier full test version of the robot" src="https://github.com/user-attachments/assets/2fbce6d8-c6b1-42cd-ac7b-221859901601" />
+<img width="471" height="404" alt="top view of the earlier test version" src="https://github.com/user-attachments/assets/54cf41aa-821c-402b-a89c-c34f619c04fb" />
 
 ## Week 12: June 15 to 21, 2026
 
