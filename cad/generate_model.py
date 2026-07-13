@@ -72,6 +72,60 @@ def add_cyl_x(center, radius, width, segments=32):
         TRIS.append(((x1, cy, cz), ring1[i], ring1[j]))
 
 
+def add_gear(center, radius, width, teeth=None):
+    # a VEX style gear: a disk with square teeth around the rim and a hub
+    if teeth is None:
+        teeth = max(10, int(radius / 2.6))
+    add_cyl_x(center, radius, width)
+    add_cyl_x(center, 9, width + 6)
+    for i in range(teeth):
+        ang = 360.0 * i / teeth
+        tooth = (center[0], center[1], center[2] + radius + 3)
+        add_box(tooth, (width, 2 * math.pi * radius / teeth * 0.45, 8),
+                tilt_x=ang, pivot=center)
+
+
+def add_omni_wheel(center, radius, width):
+    # an omni wheel: main disk, hub, and rollers around the rim
+    add_cyl_x(center, radius - 7, width)
+    add_cyl_x(center, 16, width + 6)
+    rollers = 12
+    for i in range(rollers):
+        ang = 360.0 * i / rollers
+        roller = (center[0], center[1], center[2] + radius - 6)
+        add_box(roller, (width + 4, 19, 13), tilt_x=ang, pivot=center)
+
+
+def add_channel_y(center, length):
+    # VEX C channel running along the y axis, a U shape open on top
+    cx, cy, cz = center
+    add_box((cx, cy, cz - 11), (25, length, 3))
+    add_box((cx - 11, cy, cz), (3, length, 25))
+    add_box((cx + 11, cy, cz), (3, length, 25))
+
+
+def add_channel_x(center, length):
+    # VEX C channel running along the x axis, a U shape open on top
+    cx, cy, cz = center
+    add_box((cx, cy, cz - 11), (length, 25, 3))
+    add_box((cx, cy - 11, cz), (length, 3, 25))
+    add_box((cx, cy + 11, cz), (length, 3, 25))
+
+
+def add_channel_z(center, height):
+    # VEX C channel standing vertically, a U shape open toward the front
+    cx, cy, cz = center
+    add_box((cx, cy + 11, cz), (25, 3, height))
+    add_box((cx - 11, cy, cz), (3, 25, height))
+    add_box((cx + 11, cy, cz), (3, 25, height))
+
+
+def add_motor(center):
+    # a V5 smart motor: rounded body approximated by a box and a cap
+    add_box(center, (48, 48, 40))
+    add_cyl_x((center[0], center[1], center[2]), 12, 56)
+
+
 def write_stl(path):
     with open(path, "wb") as f:
         f.write(b"Collector Bot simplified model".ljust(80, b" "))
@@ -91,47 +145,56 @@ def write_stl(path):
 
 # All sizes are in millimeters. z is up, y is toward the front.
 
-# drive base: two side rails and two cross rails made of C channel
-add_box((-140, 0, 55), (25, 400, 30))
-add_box((140, 0, 55), (25, 400, 30))
-add_box((0, 187, 55), (255, 25, 30))
-add_box((0, -187, 55), (255, 25, 30))
+# drive base: two side C channels and two cross C channels
+add_channel_y((-140, 0, 55), 400)
+add_channel_y((140, 0, 55), 400)
+add_channel_x((0, 187, 55), 255)
+add_channel_x((0, -187, 55), 255)
 
-# four omni wheels
+# four omni wheels with a drive gear next to each one
 for wx in (-165, 165):
     for wy in (-140, 140):
-        add_cyl_x((wx, wy, 50), 50, 28)
-        add_cyl_x((wx, wy, 50), 20, 32)
+        add_omni_wheel((wx, wy, 50), 50, 28)
+        gx = wx - 32 if wx > 0 else wx + 32
+        add_gear((gx, wy, 50), 34, 10)
 
-# two drive motors
-add_box((-95, -140, 80), (45, 45, 45))
-add_box((95, -140, 80), (45, 45, 45))
+# two drive motors tucked inside the frame
+add_motor((-95, -140, 80))
+add_motor((95, -140, 80))
 
-# V5 brain with its screen
-add_box((0, -20, 90), (130, 95, 30))
-add_box((0, -20, 108), (100, 70, 5))
+# V5 brain with its screen at the front, battery behind it
+add_box((0, -60, 90), (130, 95, 30))
+add_box((0, -60, 108), (100, 70, 5))
+add_box((0, 40, 95), (85, 130, 45))
 
 # two vertical tower channels holding the arm, with a brace on top
-add_box((-95, 130, 235), (25, 25, 330))
-add_box((95, 130, 235), (25, 25, 330))
+add_channel_z((-95, 130, 235), 330)
+add_channel_z((95, 130, 235), 330)
 add_box((0, 130, 390), (215, 25, 25))
 
-# arm pivot axle and the big red gears that drive the arm
+# the gear train that climbs the towers, matching the real robot:
+# small green gears low, medium red gears in the middle, and the big
+# red gears at the arm pivot on top, with axles spanning the towers
+for gz, gr in ((160, 22), (235, 34), (305, 22)):
+    add_cyl_x((0, 130, gz), 4, 250)
+    add_gear((-85, 130, gz), gr, 12)
+    add_gear((85, 130, gz), gr, 12)
 add_cyl_x((0, 130, 370), 6, 260)
-add_cyl_x((-85, 130, 370), 48, 14)
-add_cyl_x((85, 130, 370), 48, 14)
+add_gear((-85, 130, 370), 48, 14)
+add_gear((85, 130, 370), 48, 14)
 
-# smaller gears and the arm motor on the tower
-add_cyl_x((85, 130, 310), 24, 14)
-add_cyl_x((-85, 130, 310), 24, 14)
-add_box((0, 155, 300), (50, 45, 50))
+# arm motor mounted on the tower driving the gear train
+add_motor((0, 160, 300))
 
-# the two long arm beams, angled upward toward the front
+# the two long arm beams, angled upward toward the front,
+# with a cross plate connecting them partway up
 ARM_TILT = -35
 for bx in (-85, 85):
     pivot = (bx, 130, 370)
     add_box((bx, -85, 370), (25, 430, 18),
             tilt_x=ARM_TILT, pivot=pivot)
+plate_pivot = (0, 130, 370)
+add_box((0, -50, 370), (150, 90, 6), tilt_x=ARM_TILT, pivot=plate_pivot)
 
 # claw at the end of the arm: motor block and two angled fingers
 tip = rot_x((0, -300, 370), ARM_TILT, (0, 130, 370))
