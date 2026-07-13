@@ -99,7 +99,7 @@ The Collector Bot can:
 
 ### Next steps
 
-* Test the program on the actual robot and tune the arm and claw speeds.
+* Tune the arm and claw speeds now that the program runs on the robot.
 * Improve the autonomous routine.
 * Add sensors for more accurate movement.
 * Increase claw grip strength.
@@ -110,6 +110,14 @@ The Collector Bot can:
 <img width="230" height="281" alt="image" src="https://github.com/user-attachments/assets/d36c37c4-2182-4c44-89a9-6a982603604d" />
 
 <img width="298" height="324" alt="image" src="https://github.com/user-attachments/assets/92a60f62-ffbd-41df-a45f-46d0adcee5bf" />
+
+## July 12, 2026: First test on the real robot
+
+Uploaded the program to the V5 brain and ran it on the actual robot for the
+first time. It works: the robot drives and moves under controller input, so
+the code and the hardware finally met and did their job together. Next
+session I want to spend time tuning the arm and claw speeds and getting a
+video of it collecting something.
 
 ## July 12, 2026, later that evening: 3D model files
 
