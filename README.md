@@ -6,7 +6,7 @@ C++ with [PROS](https://pros.cs.purdue.edu/).
 
 ## About this project
 
-Collector Bot is an individual project by Evina Shingvi, in development since
+Collector Bot is an individual project by Evina Shingavi, in development since
 April 2026. It was made for Stardance Hack Club, and she hopes to use it in the
 2026 to 2027 TSA (Technology Student Association) year.
 
