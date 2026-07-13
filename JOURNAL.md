@@ -3,361 +3,355 @@
 **Student:** Evina Shingavi
 **Project:** Collector Bot (VEX V5)
 **Time period:** April 2026 to July 12, 2026
-**Average time spent:** about 5 hours per week, roughly 70 hours total
+**Average time spent:** about 5 hours a week, so roughly 70 hours total
 
-A note on how this journal is written: I did not keep a written log while I
-was building the robot, so I reconstructed the weekly entries below from
-memory on July 12, 2026, using my photos and the order I remember doing
-things in. The week labels are approximate. The final week and everything
-after it is documented as it happened and is backed by the commit history of
+Quick note about how this journal is written: I didn't keep a written log
+while I was building the robot. I reconstructed the weekly entries below from
+memory on July 12, 2026, using my photos and the order I remember doing things
+in, so the week labels are approximate. The last week and everything after it
+was written as it happened, and you can check it against the commit history of
 this repository.
 
 ---
 
 ## Week 1: April 1 to 5, 2026
 
-This week marked the start of the project. My primary goal was to determine
-what type of robot I wanted to build and how it would function. I spent time
-researching VEX robot designs and sketching multiple concepts. After comparing
-different ideas, I decided to build a collector robot capable of driving,
-lifting objects with an arm, and grabbing them with a claw.
+This was the start of the project. I spent most of the week figuring out what
+kind of robot I even wanted to build. I looked at a bunch of VEX robot designs
+and sketched out a few ideas, and ended up deciding on a collector robot that
+could drive, lift things with an arm, and grab them with a claw.
 
-I organized all available VEX V5 parts and sorted hardware into categories.
-This helped me understand what materials I already had and what additional
-components might be needed later.
+I also dumped out all my VEX parts and sorted the hardware into groups so I
+knew what I actually had and what I might need to get later.
 
 ### Challenges
 
-* I was unsure which arm design would provide enough lifting power.
-* Several initial sketches were too large and would have required more parts
-  than were available.
+* I wasn't sure which arm design would be strong enough to actually lift
+  things.
+* A couple of my sketches were way too big and would have needed more parts
+  than I had.
 
-### Actions taken
+### What I did about it
 
 * Simplified the design.
-* Chose a compact drivetrain with a single lifting arm and claw system.
-* Created rough measurements before beginning construction.
+* Went with a compact drivetrain plus one lifting arm and a claw.
+* Did some rough measurements before starting to build.
 
 ## Week 2: April 6 to 12, 2026
 
-I began constructing the drivetrain using VEX metal C channels, wheels,
-shafts, bearings, and two V5 motors. The focus was building a strong base
-before adding other mechanisms.
+I started building the drivetrain with VEX C channels, wheels, shafts,
+bearings, and two V5 motors. I wanted a solid base before adding anything
+else.
 
-I assembled the frame and mounted the wheels. After manually pushing the robot
-across the floor, I noticed one side rolled less smoothly than the other.
+I got the frame together and mounted the wheels. When I pushed the robot
+across the floor by hand, one side rolled worse than the other.
 
 ### Challenges
 
-* Wheel alignment was slightly off.
-* Some bearings were not seated correctly.
+* The wheel alignment was a little off.
+* Some bearings weren't seated right.
 
-### Actions taken
+### What I did about it
 
-* Reassembled part of the chassis.
-* Repositioned bearings.
-* Tightened hardware and verified spacing between components.
+* Took apart and rebuilt part of the chassis.
+* Fixed the bearing positions.
+* Tightened everything and checked the spacing between parts.
 
-By the end of the week, the drivetrain frame was complete.
+By the end of the week the drivetrain frame was done.
 
 ## Week 3: April 13 to 19, 2026
 
-This week I focused on creating the first arm prototype. Using metal beams,
-gears, and shafts, I built a simple lifting mechanism.
+This week was the first arm prototype. I built a simple lifting mechanism out
+of metal beams, gears, and shafts.
 
-The arm functioned mechanically but quickly revealed design problems. It was
-heavier than expected and placed significant strain on the motor.
+It technically worked, but it had problems right away. It was heavier than I
+expected and it was really straining the motor.
 
 ### Challenges
 
-* Arm weight caused poor lifting performance.
-* Gear alignment occasionally slipped during movement.
+* The arm was too heavy to lift well.
+* The gears slipped sometimes while it moved.
 
-### Actions taken
+### What I did about it
 
-* Tested several gear configurations.
-* Recorded observations on lifting performance.
-* Planned a redesign to reduce weight and improve leverage.
+* Tried a few different gear setups.
+* Wrote down what I noticed about the lifting.
+* Started planning a redesign to cut weight and get better leverage.
 
 ## Week 4: April 20 to 26, 2026
 
-I completed the first arm redesign. The goal was to reduce weight while
-maintaining lifting strength.
+I finished the first arm redesign. The whole point was making it lighter
+without losing lifting strength.
 
-Several metal components were removed and replaced with a simpler structure.
-I also adjusted the gear placement to improve torque.
+I took off several metal pieces and went with a simpler structure, and moved
+the gears around to get better torque.
 
 ### Challenges
 
-* The arm became lighter but developed side to side movement.
-* Structural rigidity decreased after removing support pieces.
+* The arm got lighter but started wobbling side to side.
+* Taking off support pieces made the whole thing less rigid.
 
-### Actions taken
+### What I did about it
 
-* Added temporary braces.
-* Tested different mounting positions.
-* Began planning a second redesign focused on stability.
+* Added some temporary braces.
+* Tried different mounting spots.
+* Started planning a second redesign, this time for stability.
 
 ## Week 5: April 27 to May 3, 2026
 
-This week I focused on strengthening the arm structure. Additional support
-beams were installed to reduce wobble and improve reliability.
+This week was about making the arm sturdier. I added more support beams to cut
+down the wobble.
 
-Testing showed noticeable improvement compared to previous versions.
+Testing went a lot better than the earlier versions.
 
 ### Challenges
 
-* Arm alignment shifted after repeated movement.
-* Several screws loosened during testing.
+* The arm alignment kept shifting after moving it a bunch of times.
+* Some screws came loose during testing.
 
-### Actions taken
+### What I did about it
 
-* Retightened all hardware.
-* Added additional supports near the pivot point.
-* Developed a maintenance checklist before testing sessions.
+* Retightened all the hardware.
+* Added extra supports near the pivot.
+* Started doing a quick check of the hardware before every testing session.
 
 ## Week 6: May 4 to 10, 2026
 
-I started designing and constructing the first claw mechanism.
+I started building the first claw.
 
-The original claw design was relatively small and intended for grabbing
-lightweight objects.
+The first version was pretty small and only really meant for light objects.
 
 ### Challenges
 
-* Claw opening was too narrow.
-* Objects frequently slipped during lifting.
+* The claw didn't open wide enough.
+* Things kept slipping out while lifting.
 
-### Actions taken
+### What I did about it
 
-* Modified claw dimensions.
-* Adjusted pivot locations.
-* Tested gripping performance using different object sizes.
+* Changed the claw dimensions.
+* Moved the pivot points.
+* Tested the grip on different sized objects.
 
-The claw functioned but required further redesign.
+It worked, but I knew it needed a redesign.
 
 ## Week 7: May 11 to 17, 2026
 
-This week I rebuilt the claw using longer metal pieces. The redesign increased
-the opening width and improved object handling.
+I rebuilt the claw with longer metal pieces so it opens wider and handles
+objects better.
 
-I also added rubber bands to improve grip strength and object retention.
+I also added rubber bands to help it grip and hold on to stuff.
 
 ### Challenges
 
-* Grip strength remained inconsistent.
-* Some objects rotated while being lifted.
+* The grip strength was still inconsistent.
+* Some objects would rotate while getting lifted.
 
-### Actions taken
+### What I did about it
 
-* Experimented with rubber band placement.
-* Fine tuned claw geometry.
-* Repeated testing with multiple object types.
+* Messed around with the rubber band placement until it worked.
+* Adjusted the claw geometry.
+* Kept testing with different kinds of objects.
 
-Results were significantly better than the original claw design.
+Way better than the first claw.
 
 ## Week 8: May 18 to 24, 2026
 
-I continued mechanical refinement and focused on integrating the arm and claw
-into a complete system.
-
-This was the first week that all major robot mechanisms were physically
-connected together.
+This week I put the arm and claw together into one system. First time all the
+main mechanisms of the robot were actually connected.
 
 ### Challenges
 
-* Combined weight affected arm performance.
-* The center of gravity shifted during lifting.
+* The combined weight made the arm perform worse.
+* The center of gravity moved around when lifting.
 
-### Actions taken
+### What I did about it
 
-* Strengthened the arm mounting area.
-* Rebalanced components across the chassis.
-* Performed repeated lift tests.
+* Strengthened where the arm mounts.
+* Moved things around on the chassis to rebalance it.
+* Did a bunch of lift tests over and over.
 
 ## Week 9: May 25 to 31, 2026
 
-Some structural components I planned to use had not arrived yet, which delayed
-final assembly.
+Some parts I ordered hadn't shown up yet, so I couldn't do the final assembly
+work I wanted to do.
 
-Instead of stopping progress, I focused on planning improvements, reviewing
-designs, and updating documentation.
+Instead of just stopping, I used the week to plan improvements, go over my
+designs, and update my notes.
 
 ### Challenges
 
-* Delayed parts prevented final reinforcement work.
-* Testing opportunities were limited.
+* Missing parts meant I couldn't do the reinforcement work.
+* Not much testing was possible.
 
-### Actions taken
+### What I did about it
 
-* Reviewed previous design notes.
-* Identified weak points requiring reinforcement.
-* Planned future modifications.
+* Went back through my design notes.
+* Made a list of the weak points that needed reinforcement.
+* Planned out the next changes.
 
 ## Week 10: June 1 to 7, 2026
 
-The delayed parts arrived, allowing work to resume.
+The parts finally came, so work started back up.
 
-I reinforced the arm structure using additional support beams and replaced
-several temporary components.
+I reinforced the arm with more support beams and swapped out some of the
+temporary pieces.
 
 ### Challenges
 
-* Existing mounting holes did not perfectly match the new supports.
-* Installation required partial disassembly.
+* The existing mounting holes didn't line up with the new supports.
+* I had to partially take the robot apart to install them.
 
-### Actions taken
+### What I did about it
 
-* Modified mounting locations.
-* Reassembled sections of the robot.
-* Tested structural improvements.
+* Changed the mounting locations.
+* Put the sections back together.
+* Tested it to make sure the structure actually improved.
 
-The arm felt much more stable after reinforcement.
+The arm felt way more stable after this.
 
 ## Week 11: June 8 to 14, 2026
 
-I performed extensive mechanical testing.
+Lots of mechanical testing this week.
 
-During repeated operation, I noticed an arm support shifting slightly under
-load.
+While running it over and over, I noticed one of the arm supports shifting a
+little under load.
 
 ### Challenges
 
-* One arm support moved during testing.
-* Repeated lifting caused minor alignment changes.
+* An arm support moved during testing.
+* Lifting over and over caused small alignment changes.
 
-### Actions taken
+### What I did about it
 
-* Repositioned support beams.
-* Tightened all hardware.
-* Added inspection procedures before testing.
+* Repositioned the support beams.
+* Tightened all the hardware again.
+* Started inspecting things before each test.
 
-Reliability improved significantly after adjustments.
+It got a lot more reliable after that.
 
 ## Week 12: June 15 to 21, 2026
 
-This week focused on final mechanical optimization.
-
-I inspected every subsystem, verified hardware tightness, and checked for
-mechanical interference.
+This week was final mechanical cleanup. I went through every subsystem,
+checked that the hardware was tight, and looked for anything rubbing or
+interfering.
 
 ### Challenges
 
-* Small alignment issues remained.
-* Certain fasteners loosened over time.
+* There were still some small alignment issues.
+* Certain fasteners kept loosening over time.
 
-### Actions taken
+### What I did about it
 
-* Replaced worn hardware.
-* Rechecked all moving assemblies.
-* Conducted longer testing sessions.
+* Replaced the worn hardware.
+* Rechecked all the moving parts.
+* Ran longer testing sessions.
 
 ## Week 13: June 22 to 28, 2026
 
-I completed final assembly work and prepared the robot for software
-development.
+Finished up the assembly work and got the robot ready for programming.
 
-The robot could now drive, lift, and grip reliably from a mechanical
-standpoint.
+At this point it could drive, lift, and grip reliably, at least mechanically.
 
 ### Challenges
 
-* Minor frame flex remained under heavy loads.
+* There was still a little frame flex under heavier loads.
 
-### Actions taken
+### What I did about it
 
-* Added additional reinforcement.
-* Conducted final mechanical validation.
+* Added more reinforcement.
+* Did one last round of mechanical checks.
 
 ## Week 14: June 29 to July 5, 2026
 
-This week was dedicated to system review and preparation for programming.
+This week was mostly review and getting ready to write the code.
 
-I verified motor ports, wiring paths, and overall organization of the robot.
+I went through the motor ports, the wiring paths, and the overall organization
+of the robot.
 
 ### Challenges
 
-* Several wires were routed close to moving components.
+* Some wires were running too close to moving parts.
 
-### Actions taken
+### What I did about it
 
-* Improved cable management.
-* Secured wiring using zip ties and routing adjustments.
+* Cleaned up the cable management.
+* Secured the wires with zip ties and rerouted the bad ones.
 
 ## Week 15: July 6 to 12, 2026
 
-The final week was all software and documentation. Unlike the earlier weeks,
-everything from here on is documented as it happened, and each piece is
-backed by the commit history of this repository.
+The last week was all software and documentation. Unlike the earlier weeks,
+everything from here on was written down as it happened, and you can check all
+of it against the commit history.
 
 ### July 12: The complete program, and a real repository
 
-* Wrote the whole driver control program in C++ using PROS. Tank drive on the
+* Wrote the whole driver control program in C++ with PROS. Tank drive on the
   joysticks, R1/R2 for the arm, L1/L2 for the claw, plus a one second
   autonomous routine that drives forward.
 * Learned about motor brake modes. The arm and claw use HOLD mode, so the arm
   stays up and the claw keeps its grip when I let go of the buttons.
-* One drive motor moved in the wrong direction during controller testing, so
-  I reversed the right drive motor in software.
-* Added a joystick deadband so the robot does not creep when the sticks are
-  not perfectly centered.
-* Hit a real build problem: the newest PROS kernel (4.2.2) asked the compiler
-  for the gnu++26 standard, but the toolchain that ships with the PROS VS Code
-  extension only supports up to gnu++20. Fixed it by changing the C and C++
-  standards in common.mk, and after that the project compiled cleanly.
+* One drive motor spun the wrong way during controller testing, so I reversed
+  the right drive motor in the code.
+* Added a joystick deadband so the robot doesn't slowly creep when the sticks
+  aren't perfectly centered.
+* Ran into a real build problem: the newest PROS kernel (4.2.2) wants the
+  gnu++26 compiler standard, but the toolchain that comes with the PROS VS
+  Code extension only goes up to gnu++20. Fixed it by changing the C and C++
+  standards in common.mk, and after that it compiled clean.
 * Set the project up as a proper repository: everything at the root, a README
   that explains the robot and how to run it, an MIT license, and this journal.
-* Learned that uploading files to GitHub through the browser skips folders.
-  My first upload was missing src, include, and firmware, meaning the repo had
-  no actual code in it. Fixed by pushing the full project with git instead.
+* Also learned the hard way that uploading files to GitHub through the browser
+  skips folders. My first upload was missing src, include, and firmware, so
+  the repo literally had no code in it. Fixed it by pushing with git instead.
 
 ### July 12: First test on the real robot
 
 Uploaded the program to the V5 brain and ran it on the actual robot for the
-first time. It works: the robot drives and moves under controller input, so
-the code and the hardware finally met and did their job together.
+first time. It works. The robot drives and moves with the controller, so the
+code and the hardware finally met and did their job together.
 
-The completed robot was able to:
+The finished robot can:
 
-* Drive using tank controls.
+* Drive with tank controls.
 * Lift and lower objects with the arm.
-* Grab and release objects using the claw.
-* Maintain arm position with brake mode.
-* Execute a basic autonomous routine.
+* Grab and release objects with the claw.
+* Hold the arm position with brake mode.
+* Run a basic autonomous routine.
 
 ### July 12, later that evening: 3D model files
 
 A reviewer looking at my submission asked about 3D model files. I never
-designed this robot in CAD, I built it directly from VEX parts and iterated on
+designed this robot in CAD. I built it straight from VEX parts and iterated on
 the physical robot, so there were no model files to add. To fill that gap I
 made a simplified 3D model of the finished robot as an STL file, generated by
 a Python script (cad/generate_model.py) that builds the drive base, omni
 wheels, brain, towers, geared arm, and claw out of boxes and cylinders using
-the robot's approximate real dimensions. To be clear about the order of
+the robot's real approximate measurements. Just to be clear about the order of
 events: the robot came first, and this model is a recreation of it, not the
 design it was built from.
 
-Later I extended this into a proper CAD format as well: a STEP file with 272
-colored parts (silver metal, red and green gears, black motors), generated
-with cadquery by cad/generate_step.py. I also added a rendered image of the
-model to the README, a wiring diagram, and a bill of materials with links,
-both as a table in the README and as bom.csv in the repository root.
+Later I extended it into a proper CAD format too: a STEP file with 272 colored
+parts (silver metal, red and green gears, black motors), generated with
+cadquery by cad/generate_step.py. I also added a rendered image of the model
+to the README, a wiring diagram, and a bill of materials with links, both as a
+table in the README and as bom.csv in the root of the repository.
 
 ### Next steps
 
 * Tune the arm and claw speeds now that the program runs on the robot.
 * Improve the autonomous routine.
 * Add sensors for more accurate movement.
-* Increase claw grip strength.
+* Make the claw grip stronger.
 * Practice driving for TSA competitions during the 2026 to 2027 season.
 
 ### Reflection
 
-This project taught me the importance of iteration, testing, and persistence.
-Multiple redesigns were required before the arm and claw functioned reliably.
-Mechanical issues often revealed new problems that were not obvious during
-planning. By documenting challenges and continuously improving the design, I
-was able to create a functional VEX V5 robot that met my original goals.
+This project taught me a lot about iteration, testing, and just sticking with
+it. The arm and claw both needed multiple redesigns before they worked
+reliably, and fixing one mechanical problem usually revealed another one I
+hadn't noticed during planning. By writing down what went wrong and improving
+the design piece by piece, I ended up with a working VEX V5 robot that does
+what I originally wanted it to do.
 
 ### Pictures of Robot
 

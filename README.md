@@ -1,36 +1,36 @@
 # Collector Bot
 
-A VEX V5 robot that drives around, lifts its arm, and collects objects with its
-claw. Built from VEX metal parts, four motors, and a V5 brain, and programmed in
-C++ with [PROS](https://pros.cs.purdue.edu/).
+A VEX V5 robot that drives around, lifts its arm, and picks stuff up with a
+claw. I built it from VEX metal parts, four motors, and a V5 brain, and wrote
+the code in C++ with [PROS](https://pros.cs.purdue.edu/).
 
 ## About this project
 
-Collector Bot is an individual project by Evina Shingavi, in development since
-April 2026. It was made for Stardance Hack Club, and she hopes to use it in the
+Collector Bot is my individual project. I've been working on it since April
+2026, I made it for Stardance Hack Club, and I'm planning to use it in the
 2026 to 2027 TSA (Technology Student Association) year.
 
-I made this project because I wanted a robot that could actually collect and
-carry objects, not just drive around, and because building one thing that
-needs mechanics, electronics, and code to all work together teaches more than
-any of those alone.
+I made it because I wanted a robot that could actually collect and carry
+things, not just drive around. Also, building one thing where the mechanics,
+the electronics, and the code all have to work together teaches you way more
+than doing any of those on their own.
 
 ## What it does
 
-Collector Bot is a driver controlled robot. You drive it with the V5 controller,
-lower the arm over an object, close the claw to grab it, lift it up, and carry it
-wherever you want. It also has a small autonomous routine that drives forward on
-its own for one second, which is used during the autonomous part of a match.
+You drive it with the V5 controller. You lower the arm over an object, close
+the claw to grab it, lift it up, and carry it wherever you want. It also has a
+small autonomous routine where it drives forward on its own for one second,
+which is for the autonomous part of a match.
 
 ## The robot
 
 * **Drivetrain:** two drive motors (one per side) with tank style controls
 * **Arm:** a motor powered lift made of two long metal beams with gears
-* **Claw:** a motor that opens and closes to grab and release objects
+* **Claw:** a motor that opens and closes to grab and let go of objects
 * **Brain:** VEX V5 brain running the PROS kernel
 
 The arm and claw motors use HOLD brake mode, so when you let go of the buttons
-the arm stays up and the claw keeps its grip instead of dropping the object.
+the arm stays up and the claw keeps its grip instead of dropping everything.
 
 ## Controls
 
@@ -54,8 +54,8 @@ the arm stays up and the claw keeps its grip instead of dropping the object.
 
 ## Wiring
 
-All connections are VEX V5 smart cables from the brain to the motors. There is
-no PCB or custom wiring in this project.
+Everything connects with VEX V5 smart cables from the brain to the motors.
+There's no PCB or custom wiring in this project.
 
 ![Wiring diagram](docs/wiring.svg)
 
@@ -66,56 +66,55 @@ no PCB or custom wiring in this project.
    from the VS Code marketplace.
 2. Download this repository (green **Code** button, then **Download ZIP**, then
    unzip it) and open the folder in VS Code.
-3. Click the PROS icon in the left sidebar and choose **Build**. It should finish
+3. Click the PROS icon in the left sidebar and hit **Build**. It should finish
    with no errors.
 4. Plug the V5 brain into the laptop with a USB cable and turn the brain on.
-5. Choose **Upload** in the PROS sidebar to send the program to the brain.
+5. Hit **Upload** in the PROS sidebar to send the program to the brain.
 6. On the brain's touchscreen, open **Programs** and run the program.
-7. Turn on the V5 controller (make sure it is paired with the brain) and drive.
+7. Turn on the V5 controller (it has to be paired with the brain) and drive.
 
 ## Code
 
-All the robot code lives in [`src/main.cpp`](src/main.cpp):
+All the robot code is in [`src/main.cpp`](src/main.cpp):
 
 * `initialize()` runs once at startup and sets up the screen and brake modes
 * `autonomous()` drives forward for one second on its own
-* `opcontrol()` is the main driving loop that reads the controller 50 times per
+* `opcontrol()` is the main driving loop that reads the controller 50 times a
   second and moves the wheels, arm, and claw
 
 ## Devlog
 
-The full build journal, from the first parts to the finished code, is in
+The whole build journal, from the first parts to the finished code, is in
 [JOURNAL.md](JOURNAL.md).
 
 ## Pictures of Bot
 <img width="299" height="326" alt="image" src="https://github.com/user-attachments/assets/31b9b403-030b-4fb2-b8b1-5e0454922980" />
 <img width="242" height="290" alt="image" src="https://github.com/user-attachments/assets/3aa775e8-208e-4875-9c25-ae8b87cd3874" />
 
-
-
 ## 3D model
 
 ![3D model render](docs/model_render.svg)
 
-A simplified 3D model of the robot is in [cad/collector_bot.stl](cad/collector_bot.stl),
-which GitHub can display in an interactive 3D viewer. The robot was designed
-and built physically rather than in CAD, so this model is a recreation made
-after the build. It is generated by a Python script,
-[cad/generate_model.py](cad/generate_model.py), which builds the drive base,
-omni wheels, brain, towers, geared arm, and claw out of simple shapes with the
-robot's real approximate dimensions. The image above is rendered straight from
-the STL by [cad/render_model.py](cad/render_model.py).
+There's a simplified 3D model of the robot in
+[cad/collector_bot.stl](cad/collector_bot.stl), which GitHub can open in a 3D
+viewer. Quick note on this: I designed and built the robot physically, not in
+CAD, so this model is a recreation I made after the build. It's generated by a
+Python script, [cad/generate_model.py](cad/generate_model.py), that builds the
+drive base, omni wheels, brain, towers, geared arm, and claw out of simple
+shapes using the robot's real approximate measurements. The image above is
+rendered straight from the STL by
+[cad/render_model.py](cad/render_model.py).
 
-The same model is also available as a STEP file,
-[cad/collector_bot.step](cad/collector_bot.step), generated by
-[cad/generate_step.py](cad/generate_step.py) with cadquery. The STEP version
-has each part colored like the real robot: silver metal, red and green gears,
-and black motors. It opens in any CAD program (Onshape, Fusion, FreeCAD).
+The same model is also saved as a STEP file,
+[cad/collector_bot.step](cad/collector_bot.step), made by
+[cad/generate_step.py](cad/generate_step.py) with cadquery. The STEP one has
+each part colored like the real robot (silver metal, red and green gears,
+black motors) and opens in any CAD program like Onshape, Fusion, or FreeCAD.
 
 ## Bill of materials
 
-Also available with the same links as [bom.csv](bom.csv) in the root of the
-repository.
+This same list with the same links is also in [bom.csv](bom.csv) in the root
+of the repository.
 
 | Part | Quantity | Link |
 |---|---|---|
@@ -132,5 +131,3 @@ repository.
 ## License
 
 This project is open source under the MIT License. See [LICENSE](LICENSE).
-
-
