@@ -17,9 +17,13 @@ this repository.
 ## Week 1: April 1 to 5, 2026
 
 This was the start of the project. I spent most of the week figuring out what
-kind of robot I even wanted to build. I looked at a bunch of VEX robot designs
-and sketched out a few ideas, and ended up deciding on a collector robot that
-could drive, lift things with an arm, and grab them with a claw.
+kind of robot I even wanted to build. I looked at a bunch of VEX robot
+designs, and the one that stuck with me was the official VEX V5 Clawbot. I
+used it as my inspiration: I liked the idea of a robot that drives, lifts,
+and grabs, but I wanted to design my own version instead of following the kit
+instructions. Mine ended up pretty different, with taller towers, a longer
+two beam arm driven by a gear train, and omni wheels on a bigger chassis.
+I sketched out a few ideas and settled on that direction.
 
 I also dumped out all my VEX parts and sorted the hardware into groups so I
 knew what I actually had and what I might need to get later.
