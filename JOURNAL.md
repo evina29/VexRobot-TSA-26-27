@@ -104,3 +104,12 @@ The Collector Bot can:
 * Add sensors for more accurate movement.
 * Increase claw grip strength.
 * Practice driving for TSA competitions during the 2026 to 2027 season.
+
+### Pictures of Robot
+
+<img width="230" height="281" alt="image" src="https://github.com/user-attachments/assets/d36c37c4-2182-4c44-89a9-6a982603604d" />
+
+<img width="298" height="324" alt="image" src="https://github.com/user-attachments/assets/92a60f62-ffbd-41df-a45f-46d0adcee5bf" />
+
+
+  
