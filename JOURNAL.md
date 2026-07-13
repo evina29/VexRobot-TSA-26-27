@@ -362,3 +362,21 @@ what I originally wanted it to do.
 <img width="230" height="281" alt="image" src="https://github.com/user-attachments/assets/d36c37c4-2182-4c44-89a9-6a982603604d" />
 
 <img width="298" height="324" alt="image" src="https://github.com/user-attachments/assets/92a60f62-ffbd-41df-a45f-46d0adcee5bf" />
+
+<img width="407" height="400" alt="image" src="https://github.com/user-attachments/assets/8613b248-8f4f-485f-9b2b-dcdc06b60916" />
+<img width="335" height="403" alt="image" src="https://github.com/user-attachments/assets/ced9a6d8-08b9-455c-9aa8-7ba2d0c08065" />
+<img width="471" height="404" alt="image" src="https://github.com/user-attachments/assets/54cf41aa-821c-402b-a89c-c34f619c04fb" />
+<img width="496" height="403" alt="image" src="https://github.com/user-attachments/assets/2fbce6d8-c6b1-42cd-ac7b-221859901601" />
+<img width="307" height="399" alt="image" src="https://github.com/user-attachments/assets/972cb72f-1691-4b63-b9c7-ae3cab8441d0" /> (inspo)
+<img width="389" height="398" alt="image" src="https://github.com/user-attachments/assets/ee93d5da-97c8-49db-825e-0584d6f92764" />
+<img width="307" height="374" alt="image" src="https://github.com/user-attachments/assets/49e943c1-c62b-4cf4-baed-2cea39dea6f9" />
+<img width="316" height="388" alt="image" src="https://github.com/user-attachments/assets/af0bb3f8-617f-4216-a507-b2b6592137cd" />
+<img width="185" height="260" alt="image" src="https://github.com/user-attachments/assets/dc7a7034-d55a-4cc4-b715-0b12f773c5cc" />
+
+
+
+
+
+
+
+
