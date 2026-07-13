@@ -131,5 +131,11 @@ the robot's approximate real dimensions. To be clear about the order of
 events: the robot came first, and this model is a recreation of it, not the
 design it was built from.
 
+Later I extended this into a proper CAD format as well: a STEP file with 272
+colored parts (silver metal, red and green gears, black motors), generated
+with cadquery by cad/generate_step.py. I also added a rendered image of the
+model to the README, a wiring diagram, and a bill of materials with links,
+both as a table in the README and as bom.csv in the repository root.
+
 
   
