@@ -47,6 +47,19 @@ the arm stays up and the claw keeps its grip instead of dropping the object.
 | 3 | Arm |
 | 4 | Claw |
 
+## Parts list
+
+| Part | Quantity |
+|---|---|
+| VEX V5 Brain | 1 |
+| VEX V5 Controller | 1 |
+| VEX V5 Battery | 1 |
+| V5 Smart Motors | 4 (2 drive, 1 arm, 1 claw) |
+| Omni wheels | 4 |
+| High strength gears (red and green) | assorted |
+| Metal C channels, plates, axles, and standoffs | assorted |
+| Screws, nuts, spacers, and shaft collars | assorted |
+
 ## How to run it from a laptop
 
 1. Install [VS Code](https://code.visualstudio.com/) and the
